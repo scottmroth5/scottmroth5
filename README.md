@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @scottmroth5
+- 👀 I’m interested in technology, health, nutrution, and wellness.
+- 📫 How to reach me scottmroth5@gmail.com
