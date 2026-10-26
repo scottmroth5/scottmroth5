@@ -1,6 +1,6 @@
 # Scott Roth
 
-Technology executive building healthcare platforms that scale. PGx, clinical lab systems, HL7 interfaces, and AI assisted engineering. Founding technology leader at Assurex Health (acquired by Myriad Genetics); two acquisitions, three PE backed exit cycles.
+Technology executive building healthcare platforms that scale. PGx, clinical lab systems, HL7 interfaces, and AI assisted engineering. Founding technology leader at Assurex Health (acquired by Myriad Genetics); two acquisitions, two PE backed exit cycles.
 
 ### Live demos
 
