@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scott Roth | Healthcare Technology Executive & Fractional CTO</title>
+<meta name="description" content="Scott Roth builds healthcare platforms and engineering teams that scale. Available for full-time CTO, VP, and Head of Engineering roles, fractional CTO leadership, and advisory engagements.">
+<meta property="og:title" content="Scott Roth | Healthcare Technology Executive & Fractional CTO">
+<meta property="og:description" content="Healthcare platforms, stronger engineering teams, and technology strategy. Full-time executive leadership, fractional CTO, and advisory engagements.">
+<meta property="og:url" content="https://scottmroth.com/">
+<link rel="canonical" href="https://scottmroth.com/">
+<meta name="theme-color" content="#f6f3ee">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ee;
+  --surface:#ffffff;
+  --ink:#14202b;
+  --muted:#56636f;
+  --line:#ddd6cb;
+  --accent:#0f6e6a;
+  --accent-soft:#e1efed;
+  --warm:#c8553d;
+  --max:1080px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11171d;--surface:#18212a;--ink:#ece8e1;--muted:#9aa6b1;--line:#2a3540;
+    --accent:#5cc2b9;--accent-soft:#1b302f;--warm:#e98a72;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.skip-link{position:absolute;left:16px;top:-100px;z-index:30;padding:12px 18px;background:var(--surface);color:var(--ink)}
+.skip-link:focus{top:10px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.mono{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:"Instrument Serif",serif;font-size:1.5rem;text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none}
+nav ul a{text-decoration:none;font-size:.92rem;color:var(--muted)}
+nav ul a:hover{color:var(--ink)}
+@media (max-width:720px){nav .wrap{height:auto;min-height:64px;flex-wrap:wrap;gap:8px;padding-top:12px;padding-bottom:12px}nav ul{gap:4px 16px;flex-wrap:wrap}nav ul a{display:inline-block;padding:6px 0;font-size:.85rem}}
+
+/* hero */
+.hero{padding:96px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center}
+.hero h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.03;letter-spacing:-.01em;margin:18px 0 24px}
+.hero h1 em{color:var(--accent)}
+.hero p.lede{font-size:1.15rem;color:var(--muted);max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:500;font-size:.95rem;border:1px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{transform:translateY(-1px)}
+.portrait{aspect-ratio:4/5;border-radius:24px;background:linear-gradient(160deg,var(--accent) 0%,#0b4643 100%);display:flex;align-items:flex-end;padding:28px;color:#fff;position:relative;overflow:hidden}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portrait .initials{font-family:"Instrument Serif",serif;font-size:7rem;line-height:1;opacity:.9}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;color:var(--muted);margin-top:20px}
+.status i{width:9px;height:9px;border-radius:50%;background:#2fa36b;box-shadow:0 0 0 4px rgba(47,163,107,.18)}
+@media (max-width:820px){.hero{padding:56px 0 48px}.hero-grid{grid-template-columns:1fr}.portrait{max-width:300px}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:28px 20px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:"Instrument Serif",serif;font-weight:400;font-size:2.6rem;line-height:1}
+.stat span{font-size:.9rem;color:var(--muted)}
+@media (max-width:720px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+/* sections */
+section{padding:96px 0}
+.sec-head{display:grid;grid-template-columns:1fr 2fr;gap:48px;margin-bottom:48px}
+.sec-head h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2rem,4vw,2.9rem);line-height:1.1;margin-top:10px}
+.sec-head p{color:var(--muted);align-self:end}
+@media (max-width:820px){section{padding:64px 0}.sec-head{grid-template-columns:1fr;gap:16px}}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+.card h3{font-size:1.1rem;font-weight:600;margin:14px 0 8px}
+.card p{color:var(--muted);font-size:.96rem}
+.card .num{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--warm)}
+@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.cards{grid-template-columns:1fr}}
+
+/* engagement */
+.engage{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.engage .card{background:var(--accent-soft);border-color:transparent}
+@media (max-width:700px){.engage{grid-template-columns:1fr}}
+
+/* engagement details */
+.engage ul{padding-left:18px;margin-top:14px;color:var(--muted);font-size:.96rem}
+.engage li{margin:7px 0}
+.text-link{display:inline-block;margin-top:18px;font-weight:600;color:var(--accent);text-underline-offset:4px}
+.triggers{margin-top:32px;padding:24px 28px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 14px 14px 0}
+.triggers h3{font-size:1.1rem;margin-bottom:12px}
+.triggers ul{display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;padding-left:20px;color:var(--muted)}
+.contact-note{margin-top:22px!important;font-size:.92rem}
+.demo .proof{font-size:.92rem;border-top:1px solid #46515b;padding-top:14px}
+@media(max-width:700px){.triggers ul{grid-template-columns:1fr}}
+
+/* track record */
+.timeline{border-top:1px solid var(--line)}
+.role{display:grid;grid-template-columns:1fr 2fr;gap:48px;padding:32px 0;border-bottom:1px solid var(--line)}
+.role h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:1.7rem;line-height:1.15}
+.role .title{color:var(--accent);font-weight:500;font-size:.95rem;margin-top:6px}
+.role p{color:var(--muted)}
+.role ul{margin-top:10px;padding-left:18px;color:var(--muted)}
+.role li{margin:4px 0}
+@media (max-width:820px){.role{grid-template-columns:1fr;gap:10px}}
+
+/* demos */
+#work{background:#14202b;color:#f6f3ee;--bg:#f6f3ee}
+#work .sec-head p{color:color-mix(in srgb,var(--bg) 70%,transparent)}
+#work .mono{color:#7fd3cb}
+.demos{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.demo{border:1px solid color-mix(in srgb,var(--bg) 18%,transparent);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:14px}
+.demo h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:2rem}
+.demo p{color:color-mix(in srgb,var(--bg) 72%,transparent)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-family:"IBM Plex Mono",monospace;font-size:.72rem;padding:4px 10px;border-radius:999px;border:1px solid color-mix(in srgb,var(--bg) 25%,transparent)}
+.demo .links{display:flex;gap:18px;margin-top:auto;padding-top:8px}
+.demo .links a{color:#7fd3cb;font-weight:500;text-decoration:none}
+.demo .links a:hover{text-decoration:underline}
+@media (max-width:760px){.demos{grid-template-columns:1fr}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.about-grid p{margin-bottom:18px}
+.about-grid .big{font-family:"Instrument Serif",serif;font-size:1.9rem;line-height:1.25}
+.pillars{list-style:none;display:grid;gap:14px}
+.pillars li{padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.pillars b{display:block}
+.pillars span{color:var(--muted);font-size:.95rem}
+.stack{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px}
+.stack span{font-family:"IBM Plex Mono",monospace;font-size:.74rem;padding:5px 11px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+.stack.ai span{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+@media (max-width:820px){.about-grid{grid-template-columns:1fr;gap:32px}}
+
+/* contact */
+#contact{text-align:center}
+#contact h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.08;max-width:14em;margin:14px auto 20px}
+#contact p{color:var(--muted);max-width:34em;margin:0 auto}
+#contact .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:.85rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{text-decoration:none}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav aria-label="Main navigation">
+  <div class="wrap">
+    <a class="brand" href="#">Scott Roth</a>
+    <ul>
+      <li><a href="#services">How I help</a></li>
+      <li><a href="#engagements">Work with me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#work">Live work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="mono">Healthcare technology executive · Fractional CTO</div>
+      <h1>I build healthcare platforms, and the teams behind them, <em>that scale.</em></h1>
+      <p class="lede">I help healthcare and mission-driven organizations turn complex technology challenges into better products, stronger teams, and reliable delivery. More than 20 years building and scaling platforms, from clinical labs and pharmacogenomics to AI-enabled workflows.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Start a conversation</a>
+        <a class="btn" href="#engagements">Explore ways to work together</a>
+      </div>
+      <div class="status"><i></i> Available for full-time and fractional leadership</div>
+    </div>
+    <div class="portrait">
+      <div class="initials" aria-hidden="true">SR</div>
+      <img src="scott.jpg" alt="Scott Roth" onerror="this.remove()">
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>80+</b><span>person organization grown from sole developer</span></div>
+    <div class="stat"><b>2</b><span>PE-backed exit cycles supported as a technology leader</span></div>
+    <div class="stat"><b>&lt;48h</b><span>PGx turnaround, down from several days</span></div>
+    <div class="stat"><b>CLIA · CAP</b><span>technology leadership supporting lab accreditation</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="mono">What I do</div><h2>Where I make the biggest difference</h2></div>
+      <p>I work with executive teams to turn strategy into milestones an engineering team can actually deliver, then build the platform and the people to get there.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="num">01</div><h3>Platform modernization</h3><p>Phased re-architecture with redundancy and fast failover planned in, so the business keeps running while the platform scales.</p></div>
+      <div class="card"><div class="num">02</div><h3>Engineering organizations</h3><p>Build and develop engineering teams with clear ownership, effective delivery practices, and the right mix of employees and partners.</p></div>
+      <div class="card"><div class="num">03</div><h3>Clinical lab technology</h3><p>LIMS, HL7 interfaces, EMR/EHR integrations, and the systems that move a lab from sample to result faster.</p></div>
+      <div class="card"><div class="num">04</div><h3>Security and compliance</h3><p>Build information security programs and strengthen incident readiness. Align technology and controls with clinical lab accreditation requirements.</p></div>
+      <div class="card"><div class="num">05</div><h3>AI assisted engineering</h3><p>Help teams use AI to improve delivery, automate repetitive work, and make data more useful, with human review and clear accountability.</p></div>
+      <div class="card"><div class="num">06</div><h3>Exit readiness</h3><p>Technology diligence, scalability, and the delivery discipline PE sponsors and acquirers expect.</p></div>
+    </div>
+    <div id="engagements" style="scroll-margin-top:110px;margin-top:48px">
+      <div class="mono">Work with me</div>
+      <h3 style="font-family:'Instrument Serif',serif;font-weight:400;font-size:2rem;margin-top:8px">The right leadership for your next stage</h3>
+      <div class="engage">
+        <div class="card">
+          <div class="mono">Full-time leadership</div>
+          <h3>CTO, VP, or Head of Engineering</h3>
+          <p>Long-term ownership of technology strategy, platform development, and team growth for a healthcare or mission-driven organization.</p>
+          <ul><li>Align technology investment with business priorities</li><li>Build leaders, strengthen teams, and improve delivery</li><li>Guide modernization, security, and scale</li></ul>
+          <a class="text-link" href="mailto:scott@scottmroth.com?subject=Full-time%20technology%20leadership">Discuss a leadership role →</a>
+        </div>
+        <div class="card">
+          <div class="mono">Fractional leadership &amp; advisory</div>
+          <h3>Executive guidance, flexible engagement</h3>
+          <p>Part-time leadership or a focused project when you need experienced technical direction without a full-time executive commitment.</p>
+          <ul><li><strong>Assessment:</strong> review the platform, team, and risks; develop a prioritized roadmap</li><li><strong>Ongoing leadership:</strong> guide architecture, delivery, hiring, and technology decisions</li><li><strong>Focused initiative:</strong> support modernization, AI adoption, or technology diligence</li></ul>
+          <a class="text-link" href="mailto:scott@scottmroth.com?subject=Fractional%20CTO%20or%20advisory%20engagement">Discuss an engagement →</a>
+        </div>
+      </div>
+    </div>
+    <div class="triggers">
+      <h3>When I can help</h3>
+      <ul><li>Your platform needs to scale or modernize while the business keeps running.</li><li>Your team needs clearer direction, stronger leadership, or more predictable delivery.</li><li>You need to connect clinical workflows, lab systems, and healthcare platforms.</li><li>You are preparing for growth, accreditation, diligence, or an acquisition.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="mono">Track record</div><h2>Built from zero, scaled to exit</h2></div>
+      <p>I've been brought in to build teams and platforms from scratch, and to evolve and mature the ones already running.</p>
+    </div>
+    <div class="timeline">
+      <div class="role">
+        <div><h3>Mira Precision Health</h3><div class="title">VP of Technology and Security Officer</div></div>
+        <div>
+          <p>Led the technology shift of a CLIA certified clinical lab from COVID and flu testing to commercializing pharmacogenomics, including the ToxNav oncology PGx test developed at the University of Oxford.</p>
+          <ul>
+            <li>Cut PGx result turnaround from several days to under 48 hours, with a path to 24</li>
+            <li>Re-architected the platform for higher volume and lab efficiency</li>
+            <li>Owned the information security program through CAP accreditation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="role">
+        <div><h3>Assurex Health / Myriad Genetics</h3><div class="title">VP of Product Development</div></div>
+        <div>
+          <p>Founding team technology leader. Took the GeneSight platform, commercializing PGx technology from Mayo Clinic and Cincinnati Children's Hospital, from demo quality to production, then scaled it for a decade.</p>
+          <ul>
+            <li>Grew from sole developer to an 80+ person organization across product, engineering, DevOps, IT, QA, and UX</li>
+            <li>Led through CAP, CLIA, and New York State accreditation</li>
+            <li>After the Myriad acquisition, also led the centralized CRM platform across all Myriad business units and served on the Myriad architecture team</li>
+          </ul>
+        </div>
+      </div>
+      <div class="role">
+        <div><h3>Hive Networks</h3><div class="title">Founding CTO</div></div>
+        <div><p>Built the product, platform, and team commercializing Cincinnati Children's Hospital's Learning Health Network model.</p></div>
+      </div>
+      <div class="role">
+        <div><h3>PublicSchoolWORKS</h3><div class="title">Technology Leadership</div></div>
+        <div><p>Evolved the platform and team through acquisition by Raptor Technologies and the PE backed integration that followed.</p></div>
+      </div>
+      <div class="role">
+        <div><h3>ActivePrime</h3><div class="title">VP of Technology</div></div>
+        <div><p>Matured an existing platform and engineering team for the next stage of growth.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="mono">Live work</div><h2>Still shipping, hands on</h2></div>
+      <p>Personal applications I designed and built with AI as an engineering partner. Explore the demos to see how I turn everyday problems into useful products.</p>
+    </div>
+    <div class="demos">
+      <div class="demo">
+        <div class="mono">Health and AI</div>
+        <h3>Health Review</h3>
+        <p>Brings health metrics, workouts, and daily check-ins together to support weekly AI-assisted reviews and more informed health conversations.</p>
+        <p class="proof"><strong>What it demonstrates:</strong> data integration, personalized AI summaries, and a recurring review workflow.</p>
+        <div class="tags"><span>JavaScript</span><span>Claude API</span><span>Automation</span></div>
+        <div class="links"><a href="https://demohealth.scottmroth.com/" target="_blank" rel="noopener noreferrer">Explore Health Review →</a><a aria-label="Health Review source code" href="https://github.com/scottmroth5/Health-Review" target="_blank" rel="noopener noreferrer">Code</a></div>
+      </div>
+      <div class="demo">
+        <div class="mono">Agents and automation</div>
+        <h3>Job Hunt</h3>
+        <p>Helps users discover opportunities, evaluate fit, tailor application materials, and track progress through the hiring process.</p>
+        <p class="proof"><strong>What it demonstrates:</strong> agent workflows, decision support, and automation across a multi-step process.</p>
+        <div class="tags"><span>JavaScript</span><span>Claude API</span><span>Agents</span></div>
+        <div class="links"><a href="https://demojobs.scottmroth.com/" target="_blank" rel="noopener noreferrer">Explore Job Hunt →</a><a aria-label="Job Hunt source code" href="https://github.com/scottmroth5/Job-Agent" target="_blank" rel="noopener noreferrer">Code</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <h2 class="mono">About</h2>
+      <p class="big" style="margin-top:14px">I'm an engineer at heart. I love solving problems, building products, and leading teams, and I stay hands-on with architecture, design, and code.</p>
+      <p>I started writing C and C++ on distributed systems and have worked hands on in whatever stack each company needed. I come in, learn the codebase fast, and pivot the technology when the future demands it.</p>
+      <p>Based in Cincinnati. Husband and father of five. Most of my energy outside work goes to family and my own health and fitness, which is exactly why I build tools in that space.</p>
+      <div class="stack"><span>C#</span><span>.NET</span><span>Java</span><span>Ruby on Rails</span><span>JavaScript</span><span>SQL Server</span><span>MySQL</span><span>PostgreSQL</span><span>AWS</span><span>Azure</span></div>
+      <div class="mono" style="margin-top:22px">AI in my workflow</div>
+      <div class="stack ai" style="margin-top:10px"><span>Claude Code</span><span>Claude API</span><span>ChatGPT</span></div>
+    </div>
+    <ul class="pillars">
+      <li><b>Data drives strategy</b><span>Give teams access to useful information so they can make better decisions. AI can help turn complex data into accessible insights.</span></li>
+      <li><b>Reduce risk through phases</b><span>Big platform changes land safely when they're planned, tested, and rolled out in stages.</span></li>
+      <li><b>Technology should expand opportunity</b><span>The work I care most about puts better health within reach of more people, especially underserved communities.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:24px">
+  <div class="wrap">
+    <div class="mono">Contact</div>
+    <h2>Your next stage needs the right technology leadership.</h2>
+    <p>Looking for a full-time technology leader or fractional CTO? Tell me about your organization, the challenge ahead, and the kind of support you need. Remote-first, with hybrid opportunities in the Cincinnati area.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:scott@scottmroth.com?subject=Let%27s%20talk%20technology%20leadership">Email Scott</a>
+      <a class="btn" href="https://www.linkedin.com/in/scottroth-healthcaretechleader">LinkedIn</a>
+      <a class="btn" href="https://github.com/scottmroth5">GitHub</a>
+    </div>
+    <p class="contact-note">Start with a conversation about your goals, priorities, and whether I can help.<br><a href="mailto:scott@scottmroth.com">scott@scottmroth.com</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Scott Roth</span>
+    <span><a href="https://demohealth.scottmroth.com/">Health Review</a> · <a href="https://demojobs.scottmroth.com/">Job Hunt</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
